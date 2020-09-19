@@ -1,4 +1,4 @@
-package com.company.lab2;
+package com.company.lab1_advanced;
 
 public class Student {
     public Student(int _mark){
