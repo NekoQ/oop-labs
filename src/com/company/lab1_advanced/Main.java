@@ -13,7 +13,7 @@ public class Main {
             universities[i] = new University();
 
             for (int j = 0; j < 3; j++) {
-                universities[i].students.add(new Student(abs(current().nextInt() % 10 + 1)));
+                universities[i].students.add(new Student(abs(current().nextInt() % 10) + 1));
                 System.out.println(universities[i].students.get(j).mark);
             }
         }
