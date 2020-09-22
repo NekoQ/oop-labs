@@ -25,12 +25,10 @@ public class Queue {
     }
 
     public void push(Integer num){
-        if (isFull()){
+        if (isFull())
             System.out.println("queue maximum size reached");
-        }
-        else {
+        else
             queue.add(num);
-        }
     }
 
     public Integer pop() {
