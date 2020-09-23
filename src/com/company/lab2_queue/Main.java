@@ -8,7 +8,6 @@ public class Main {
         queue1.push(1);
         queue1.push(2);
         queue1.push(3);
-
         queue2.push(9);
         queue2.push(8);
         queue2.push(7);

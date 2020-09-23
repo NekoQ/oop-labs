@@ -21,7 +21,7 @@ public class Queue {
     }
 
     public boolean isFull(){
-        return max_size > -1 && queue.size() == max_size;
+        return queue.size() == max_size;
     }
 
     public void push(Integer num){
