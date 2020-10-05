@@ -55,7 +55,7 @@ public class Text {
             freq.put(word, count + 1);
         }
 
-        System.out.println("Top 5 words by frequency:");
+        System.out.println("Top 5 words by frequency: ");
         for (int i = 0; i < (Math.min(freq.size(), 5)); i++) {
              int max = -1;
              String maxString = "";
@@ -74,7 +74,7 @@ public class Text {
         uniqueWords.toArray(uWords);
         Arrays.sort(uWords, Comparator.comparingInt(String::length).reversed());
 
-        System.out.println("Top 5 words by length:");
+        System.out.println("Top 5 words by length: ");
         for (int i = 0; i < Math.min(uWords.length, 5); i++) {
             System.out.println(uWords[i].toLowerCase() + " - " + uWords[i].length());
         }
