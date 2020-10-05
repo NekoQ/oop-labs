@@ -78,9 +78,5 @@ public class Text {
         for (int i = 0; i < Math.min(uWords.length, 5); i++) {
             System.out.println(uWords[i].toLowerCase() + " - " + uWords[i].length());
         }
-
-
-
     }
-
 }
