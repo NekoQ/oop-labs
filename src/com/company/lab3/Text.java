@@ -47,7 +47,7 @@ public class Text {
     public void printWordsInfo() {
         Map<String, Integer> freq = new HashMap<>();
 
-        String[] words = text.replaceAll("[.]|[,]|[;]|[:]|[\"]|[!]|[?]}", "").split(" ");
+        String[] words = text.replaceAll("[(]|[)]|[.]|[,]|[;]|[:]|[\"]|[!]|[?]", "").split(" ");
 
         for (String word : words) {
             word = word.toLowerCase();
@@ -78,9 +78,5 @@ public class Text {
         for (int i = 0; i < Math.min(uWords.length, 5); i++) {
             System.out.println(uWords[i].toLowerCase() + " - " + uWords[i].length());
         }
-
-
-
     }
-
 }
