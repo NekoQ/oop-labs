@@ -57,16 +57,16 @@ public class Text {
 
         System.out.println("Top 5 words by frequency:");
         for (int i = 0; i < (Math.min(freq.size(), 5)); i++) {
-             int max = -1;
-             String maxString = "";
-             for (Map.Entry<String, Integer> entry : freq.entrySet()) {
-                 if (entry.getValue() > max) {
-                     max = entry.getValue();
-                     maxString = entry.getKey();
-                 }
-             }
+            int max = -1;
+            String maxString = "";
+            for (Map.Entry<String, Integer> entry : freq.entrySet()) {
+                if (entry.getValue() > max) {
+                    max = entry.getValue();
+                    maxString = entry.getKey();
+                }
+            }
             System.out.println(maxString + " - " + max);
-             freq.put(maxString, -1);
+            freq.put(maxString, -1);
         }
 
         Set<String> uniqueWords = new HashSet<>(Arrays.asList(words));
